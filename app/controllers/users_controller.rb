@@ -10,8 +10,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t("controllers.users_controller.welcome")
-      redirect_to root_path
+      log_in @user
+      flash[:success] = t ".flash"
+      redirect_to @user
     else
       flash[:error] = @user.errors.full_messages
       render :new
