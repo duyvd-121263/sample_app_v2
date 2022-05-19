@@ -30,11 +30,39 @@ vi:
       settings: "Cài đặt"
       logout: "Đăng xuất"
   users:
+    form:
+      name: "Ten"
+      email: "Email"
+      password: "Mat khau"
     new:
       provide_title: "Đăng_ký"
       title: "Đăng ký"
       btn_title: "Tạo tài khoản"
       password_confirmation: "Xác nhận"
+      delete: "Xóa"
+      confirm: "Bạn có chắc?"
+    edit:
+      title: "Cập nhật Profile"
+      edit_user: "Chỉnh sửa user"
+      confirmation: "Xác nhận"
+      save_changes: "Lưu thay đổi"
+      btn_changes: "Thay đổi "
+    update:
+      edit_success: "Profile đã update"
+      edit_fail: "Chỉnh sửa lỗi"
+    index:
+      title: "Tất cả user"
+    destroy:
+      delete_success: "Xóa user thành công"
+      delete_fail: "Xóa lỗi"
+    logged_in_user:
+      login_warning: "Hãy đăng nhập"
+    edit:
+      title: "Cập nhật hồ sơ "
+      edit_user: "Chỉnh sửa user"
+      confirmation: "Xác nhận"
+      save_changes: "Lưu thay đổi"
+      btn_changes: "Thay đổi"
     controller:
       flash: "Chào mừng bạn đến với ứng dụng mẫu!"
   shared:

@@ -30,11 +30,33 @@ en:
       settings: "Settings"
       logout: "Log out"
   users:
+    form:
+      name: "Name"
+      email: "Email"
+      password: "Password"
     new:
       provide_title: "sign_up"
       title: "Sign up"
       btn_title: "Create my account"
       password_confirmation: "Confirmation"
+      delete: "Delete"
+      confirm: "You sure?"
+    edit:
+      title: "Update your profile"
+      edit_user: "Edit User"
+      confirmation: "Confirmation"
+      save_changes: "Save changes"
+      btn_changes: "Changes"
+    update:
+      edit_success: "Profile updated"
+      edit_fail: "Edit error"
+    index:
+      title: "All user"
+    destroy:
+      delete_success: "User deleted"
+      delete_fail: "Delete fail"
+    logged_in_user:
+      login_warning: "Please log in"
     controller:
       flash: "welcome to the sample app!"
   shared:
