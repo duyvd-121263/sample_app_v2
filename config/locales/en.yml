@@ -49,5 +49,6 @@ en:
       title: "Log in"
       btn_login: "Login"
       new_user: "New user?"
+      remember: "Remember me on this computer"
     controller:
       error: "Invalid email password combination"

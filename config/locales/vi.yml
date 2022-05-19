@@ -49,5 +49,6 @@ vi:
       title: "Đăng nhập"
       btn_login: "Đăng nhập"
       new_user: "Người dùng mới?"
+      remember: "Ghi nhớ trên máy tính này"
     controller:
       error: "Mật khẩu email không hợp lệ"
