@@ -41,6 +41,8 @@ en:
       password_confirmation: "Confirmation"
       delete: "Delete"
       confirm: "You sure?"
+    create:
+      create_info: "Please check your email to activate your account."
     edit:
       title: "Update your profile"
       edit_user: "Edit User"
@@ -58,7 +60,9 @@ en:
     logged_in_user:
       login_warning: "Please log in"
     controller:
-      flash: "welcome to the sample app!"
+      error: "Invalid email password combination"
+      find_error: "Invalid Email"
+      flass_warning: "Account not activated. Check your email for the activation link."
   shared:
     error_messages:
       the_form_contains: "The form contains"
@@ -74,3 +78,21 @@ en:
       remember: "Remember me on this computer"
     controller:
       error: "Invalid email password combination"
+  account_activations:
+    edit:
+      flash_success: "Account activated!"
+      flash_danger: "Invalid activation link"
+  user_mailer:
+    account_activation:
+      subject_mail: "Account activation"
+      title: "Sample App"
+      greeting: "Hi"
+      service_html: "Welcome to the Sample App! Click on the link below to activate your account:"
+      href: "Activate"
+    account_activation_text:
+      greeting: "Hi"
+      service_html: "Welcome to the Sample App! Click on the link below to activate your account:"
+  account_activations:
+    edit:
+      flash_success: "Account activated!"
+      flash_danger: "Invalid activation link"
