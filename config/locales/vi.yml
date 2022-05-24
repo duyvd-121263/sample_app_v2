@@ -78,5 +78,48 @@ vi:
       btn_login: "Đăng nhập"
       new_user: "Người dùng mới?"
       remember: "Ghi nhớ trên máy tính này"
+      forgot_pass: "Quên mật khẩu"
     controller:
       error: "Mật khẩu email không hợp lệ"
+  account_activations:
+    edit:
+      flash_success: "Tài khoản đã được kích hoạt!"
+      flash_danger: "Liên kết kích hoạt không hợp lệ"
+  password_resets:
+    create:
+      flash_create_info: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+      flash_create_danger: "Không tìm thấy địa chỉ email"
+    update:
+      flash_update_success: "Mật khẩu đã được đặt lại."
+      flash_update_fail: "Cập nhật mật khẩu lỗi."
+      error: "không thể để trống"
+    check_expiration:
+      flash_danger: "Đặt lại mật khẩu đã hết hạn."
+    get_user:
+      email_not_found: "Không tìm thấy email"
+    new:
+      provide_title: "Quên mật khẩu"
+      title: "Quên mật khảu"
+      btn_button: "Gửi"
+    edit:
+      provide_title: "Reset password"
+      title: "Reset password"
+      password_confirmation: "Xác nhận"
+      btn_button: "Cập nhật mật khẩu"
+  user_mailer:
+    account_activation:
+      subject_mail: "Kích họat tài khoản"
+      title: "Sample App"
+      greeting: "Hi"
+      service_html: "Welcome to the Sample App! Click on the link below to activate your account:"
+      href: "Kích hoạt"
+    account_activation_text:
+      greeting: "Hi"
+      service_html: "Welcome to the Sample App! Click on the link below to activate your account:"
+    password_reset:
+      subject_password: "Password reset"
+      title: "Password reset"
+      service_html_first: "Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:"
+      link_to_title: "Reset password"
+      service_html_last: "Liên kết này sẽ hết hạn sau hai giờ."
+      content: "Nếu bạn không yêu cầu đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ vẫn như cũ."

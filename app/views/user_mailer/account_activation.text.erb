@@ -2,4 +2,4 @@
 
 <%= t ".service_html" %>
 
-<%= edit_account_activation_url(id: @user.id, token: @user.activation_token, email: @user.email) %>
+<%= edit_account_activation_url(id: @user.activation_token, email: @user.email) %>
