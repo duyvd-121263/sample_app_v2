@@ -7,7 +7,9 @@ class UsersController < ApplicationController
     @users = User.paginate page: params[:page], per_page: Settings.users_controller.size.per_page
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.paginate page: params[:page], per_page: Settings.users_controller.size.per_page
+  end
 
   def new
     @user = User.new
@@ -46,6 +48,20 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def following
+    @title = "Following"
+    @user = User.find_by(id: params[:id])
+    @users = @user.following.paginate(page: params[:page])
+    render "show_follow"
+  end
+
+  def followers
+    @title = "Followers"
+    @user = User.find_by(id: params[:id])
+    @users = @user.followers.paginate(page: params[:page])
+    render "show_follow"
+  end
+
   private
 
   def user_params
@@ -56,14 +72,6 @@ class UsersController < ApplicationController
   def find_user
     @user = User.find_by id: params[:id]
     redirect_to root_path unless @user
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t ".login_warning."
-    redirect_to login_url
   end
 
   def correct_user
