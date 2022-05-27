@@ -4,10 +4,12 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
 
   def index
-    @users = User.paginate page: params[:page], per_page: Settings.users_controller.size.per_page
+    @pagy, @users = pagy User.all
   end
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy @user.microposts
+  end
 
   def new
     @user = User.new
@@ -56,14 +58,6 @@ class UsersController < ApplicationController
   def find_user
     @user = User.find_by id: params[:id]
     redirect_to root_path unless @user
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t ".login_warning."
-    redirect_to login_url
   end
 
   def correct_user

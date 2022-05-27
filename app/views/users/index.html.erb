@@ -1,10 +1,10 @@
 <%= provide :title, t(".title") %>
 <h1><%= t(".title") %></h1>
 
-<%= will_paginate %>
+<%== pagy_nav(@pagy) %>
 
 <ul class="users">
   <%= render @users %>
 </ul>
 
-<%= will_paginate %>
+<%== pagy_nav(@pagy) %>

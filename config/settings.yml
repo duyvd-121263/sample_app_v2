@@ -13,8 +13,29 @@ users_controller:
 users_helper:
   size:
     size_length: 80
+micropost:
+  image_path: ["image/jpeg", "image/gif", "image/png"]
+  message: "must be a valid image format"
+  message_size: "should be less than 5MB"
+  less_than: 5
+  length_content: 140
+  resize_to_limit: [500, 500]
+size_gravatar: 50
+items: 5
+path_rails_tut: "http://www.railstutorial.org/"
 users:
   size:
     max_length: 50
 edit:
   link_href: "https://gravatar.com/emails"
+shared:
+  micropost_form:
+    image_path: "image/jpeg,image/gif,image/png"
+static_pages:
+  items:
+    max_length: 30
+  home:
+    href: "http://www.railstutorial.org/"
+  help:
+    href_help: "http://www.railstutorial.org/help"
+    href_book: "http://www.railstutorial.org/book"

@@ -69,6 +69,13 @@ en:
       error: "Error"
       created_fail: "Created account fail"
       no_info: "No information user"
+    micropost_form:
+      place_holder: "Compose new micropost..."
+      post: "Post"
+      alert: "Maximum file size is 5MB. Please choose a smaller file."
+    user_info:
+      href: "view my profile"
+      micropost: "micropost"
   sessions:
     new:
       btn_signup: "Sign up now!"
@@ -79,6 +86,18 @@ en:
       forgot_pass: "Forgot password"
     controller:
       error: "Invalid email password combination"
+  micropost:
+    create:
+      flass_success: "Micropost created!"
+    correct_user:
+      flass_danger: "Micropost invalid"
+  microposts:
+    micropost:
+      delete: "Delete"
+      you_sure: "You sure ?"
+    destroy:
+      flass_success: "Micropost deleted!"
+      flass_danger: "Delete fail"
   account_activations:
     edit:
       flash_success: "Account activated!"
@@ -125,3 +144,11 @@ en:
     edit:
       flash_success: "Account activated!"
       flash_danger: "Invalid activation link"
+activerecord:
+  errors:
+    models:
+      micropost:
+        attributes:
+          image:
+            too_big: "Img size is too big"
+            wrong_format: "must be a valid image format"
