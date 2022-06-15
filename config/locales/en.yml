@@ -30,6 +30,17 @@ en:
       settings: "Settings"
       logout: "Log out"
   users:
+    following:
+      follow: "Following"
+    followers:
+      follow: "Follower"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      view_my_profile: "View my profile"
+      micropost: "Micropost: "
     form:
       name: "Name"
       email: "Email"
@@ -144,6 +155,11 @@ en:
     edit:
       flash_success: "Account activated!"
       flash_danger: "Invalid activation link"
+  views:
+    microposts:
+      micropost:
+        post: "Posted"
+        ago: "ago."
 activerecord:
   errors:
     models:

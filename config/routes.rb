@@ -9,7 +9,8 @@ Rails.application.routes.draw do
     get "/logout", to: "sessions#destroy"
     resources :users do
       member do
-        get :following, :followers
+        get :following, to: "follows#following"
+        get :followers, to: "follows#followers"
       end
     end
     root "static_pages#home"
